@@ -9,6 +9,8 @@ def encode(password):
     return encoded
 
 # DECODE MISSING!!!!!!!!!!!!!
+
+# DONE BY EVAN <3
 def decode(password):
     decoded_list = []
     for digit in password:

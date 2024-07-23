@@ -9,6 +9,17 @@ def encode(password):
     return encoded
 
 # DECODE MISSING!!!!!!!!!!!!!
+def decode(password):
+    decoded_list = []
+    for digit in password:
+        number = int(digit)
+        if number >= 3:
+            number -= 3
+        else:
+            number += 7
+        decoded_list.append(str(number))
+    decoded_string = ''.join(decoded_list)
+    return decoded_string
 
 def main():
     while True:

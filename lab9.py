@@ -1,14 +1,14 @@
 def encode(password):
     encoded = ""
     for char in password:
+        if int(char) >= 7:
+            encoded += str(int(char) - 7)
+            continue
         encoded += str(int(char) + 3)
+        
     return encoded
 
-def decode(password):
-    deccoded = ""
-    for char in password:
-        decoded += str(int(char) - 3)
-    return decoded
+# DECODE MISSING!!!!!!!!!!!!!
 
 def main():
     while True:
